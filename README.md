@@ -22,6 +22,7 @@ Voici le schéma de l'architecture de l'application :
 Les fonctionnalités de ce micro-service sont les suivantes :
 
 Candidatures: 
+
 • Créer une candidature 
 
 • Récupérer toutes les candidatures 
@@ -33,6 +34,7 @@ Candidatures:
 • Supprimer une candidature 
 
 Avis sur les candidatures par les recruteurs et candidats:
+
 • Créer un avis sur une candidature
 
 • Récupérer toutes les avis
