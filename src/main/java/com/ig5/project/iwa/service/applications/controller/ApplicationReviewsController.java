@@ -24,7 +24,7 @@ public class ApplicationReviewsController {
         if(page != null & size != null) {
             if(page < 0 || size < 1) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
-                        "page must be greater than equl to 0, and size must be greater than 0");
+                        "page must be greater or equal to 0, and size must be greater than 0");
             }
             else {
                 return applicationReviewRepository.findAll(PageRequest.of(page, size, Sort.by("lastName")));
@@ -38,7 +38,7 @@ public class ApplicationReviewsController {
     public Application_review getReviewById(@PathVariable("id") int id) {
         return applicationReviewRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
-                        String.format("Application with id %s not found", id)));
+                        String.format("Review with id %s not found", id)));
     }
 
     @PostMapping
@@ -56,7 +56,7 @@ public class ApplicationReviewsController {
                     return applicationReviewRepository.save(existingApplication);
                 })
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
-                        String.format("Application with id %s not found", id)));
+                        String.format("Review with id %s not found", id)));
     }
 
     @DeleteMapping("{id}")

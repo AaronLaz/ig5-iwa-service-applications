@@ -25,7 +25,7 @@ public class ApplicationController {
         if(page != null & size != null) {
             if(page < 0 || size < 1) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
-                        "page must be greater than equl to 0, and size must be greater than 0");
+                        "page must be greater or equal to 0, and size must be greater than 0");
             }
             else {
                 return applicationRepository.findAll(PageRequest.of(page, size, Sort.by("lastName")));
