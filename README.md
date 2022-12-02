@@ -22,18 +22,26 @@ Voici le schéma de l'architecture de l'application :
 Les fonctionnalités de ce micro-service sont les suivantes :
 
 Candidatures: 
-• Créer une candidature \n
-• Récupérer toutes les candidatures \n
-• Récupérer une candidature avec son id \n
-• Mettre à jour une candidature avec son id \n
-• Supprimer une candidature \n
+• Créer une candidature 
+
+• Récupérer toutes les candidatures 
+
+• Récupérer une candidature avec son id 
+
+• Mettre à jour une candidature avec son id 
+
+• Supprimer une candidature 
 
 Avis sur les candidatures par les recruteurs et candidats:
-• Créer un avis sur une candidature \n
-• Récupérer toutes les avis \n
-• Récupérer un avis avec son id \n
-• Mettre à jour un avis avec son id \n
-• Supprimer un avis \n
+• Créer un avis sur une candidature
+
+• Récupérer toutes les avis
+
+• Récupérer un avis avec son id
+
+• Mettre à jour un avis avec son id
+
+• Supprimer un avis
 
 
 Vous trouverez les deux autres micro-services ici :
