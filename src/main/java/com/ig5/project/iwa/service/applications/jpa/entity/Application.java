@@ -23,10 +23,10 @@ public class Application {
     private Date created;
 
     @Column(name="status")
-    private Applications_status status;
+    private String status;
 
     @Column(name="resume")
-    private byte resume;
+    private byte[] resume;
 
     @Column(name="recommendation")
     private int recommendation;
@@ -35,7 +35,7 @@ public class Application {
 
     }
 
-    public Application(int id, int applicant_id, int offer_id, Date created, Applications_status status, byte resume, int recommendation){
+    public Application(int id, int applicant_id, int offer_id, Date created, String status, byte[] resume, int recommendation){
         this.id = id;
         this.applicant_id = applicant_id;
         this.offer_id = offer_id;
@@ -77,19 +77,19 @@ public class Application {
         this.created = created;
     }
 
-    public Applications_status getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Applications_status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public byte getResume() {
+    public byte[] getResume() {
         return resume;
     }
 
-    public void setResume(byte resume) {
+    public void setResume(byte[] resume) {
         this.resume = resume;
     }
 
